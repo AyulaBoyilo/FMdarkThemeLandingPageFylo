@@ -1,0 +1,222 @@
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 15px 100px;
+}
+
+// Header
+header {
+  background: url("../images/bg-curvy-desktop.svg") no-repeat bottom center /
+    100%;
+  background-color: $dark-blue;
+
+  nav {
+    margin: 50px;
+
+    img {
+      width: 170px;
+    }
+
+    li {
+      font-size: 16px;
+      padding-left: 50px;
+    }
+  }
+
+  img {
+    width: auto;
+  }
+
+  h1 {
+    font-size: 40px;
+    max-width: 720px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  p {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+
+// Features
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75vw;
+  margin: auto;
+
+  .access,
+  .security,
+  .collaboration,
+  .store {
+    width: 50%;
+    margin: 0 0 50px 0;
+    padding: 0 50px;
+  }
+
+  img {
+    width: 80px;
+  }
+
+  .security img {
+    width: 70px;
+  }
+
+  .security {
+    position: relative;
+    top: -15px;
+    padding-bottom: 15px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  p {
+    max-width: 370px;
+  }
+}
+
+// Demo
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+  padding: 0 100px;
+
+  .first {
+    width: auto;
+    padding-right: 90px;
+
+    img {
+      width: 600px;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+    max-width: 400px;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 15px;
+    max-width: 470px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+}
+
+// Testimonials
+.testimonials {
+  display: flex;
+  width: 85vw;
+  margin: auto;
+  margin-top: 150px;
+
+  .card {
+    height: 210px;
+    width: 30%;
+    padding: 40px 25px 25px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .card:first-child {
+    margin-top: 0;
+
+    &::before {
+      content: url("../images/bg-quotes.png");
+      transform: scale(1);
+      top: -35px;
+      left: -10px;
+    }
+  }
+}
+
+// Sign-up
+.sign-up {
+  width: 60vw;
+  max-width: 805px;
+  bottom: -100px;
+  margin-bottom: 0;
+  margin-top: 20px;
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    padding: 0 70px;
+  }
+
+  form {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+
+    input {
+      margin-bottom: 0;
+      width: 65%;
+
+      &::placeholder {
+        font-size: 12px;
+        padding-left: 0;
+        opacity: 0.4;
+      }
+    }
+
+    .btn {
+      font-size: 14px;
+      padding: 12px 30px;
+    }
+  }
+}
+
+// Footer
+footer {
+  padding: 200px 100px 70px 100px;
+
+  .footer-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .location {
+      max-width: 370px;
+    }
+
+    ul,
+    .social {
+      margin-top: 0;
+    }
+
+    ul {
+      width: 400px;
+      height: 150px;
+      flex-wrap: wrap;
+      padding-left: 100px;
+    }
+
+    .social {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.alert {
+  color: $light-red;
+  position: absolute;
+  bottom: -25px;
+  left: 75px;
+  font-size: 12px;
+}

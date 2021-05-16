@@ -1,0 +1,351 @@
+@import "base";
+@import "colors";
+
+section {
+  padding: 30px;
+}
+
+// Header
+header {
+  padding: 20px 30px 150px 30px;
+  background: url("../images/bg-curvy-mobile.svg") no-repeat bottom center /
+    100%;
+  background-color: $dark-blue;
+
+  nav {
+    margin: 0 -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      width: 75px;
+    }
+
+    li {
+      padding-left: 25px;
+      font-size: 12px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .intro {
+    margin-top: 50px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 25px;
+  }
+
+  p {
+    padding: 10px;
+    padding-bottom: 40px;
+  }
+}
+
+// Features
+.features {
+  .security,
+  .collaboration,
+  .store {
+    margin-top: 100px;
+  }
+
+  img {
+    width: 65px;
+  }
+
+  .security img {
+    width: 55px;
+  }
+
+  h4 {
+    font-size: 17px;
+    margin-top: 30px;
+  }
+
+  p {
+    margin: 10px auto 0 auto;
+    max-width: 70vw;
+  }
+}
+
+// Demo
+.demo {
+  margin-top: 100px;
+  text-align: left;
+
+  h2 {
+    font-size: 18px;
+    margin-top: 40px;
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a {
+    color: $cyan-grad;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $cyan-grad;
+    font-size: 12px;
+
+    i {
+      font-size: 11px;
+      padding-left: 3px;
+    }
+
+    &:hover {
+      color: $white;
+      border-bottom: 1px solid $white;
+    }
+  }
+}
+
+// Testimonials
+.testimonials {
+  .card {
+    background-color: $lighter-dark-blue;
+    padding: 30px 20px 20px 20px;
+    text-align: left;
+    font-size: 11px;
+    line-height: 1.7;
+    margin: 0 auto 25px auto;
+    width: max(285px, 50vw);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px hsl(219, 30%, 12%);
+
+    .person {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+
+      .data {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+
+        .name {
+          font-size: 10px;
+          font-weight: 700;
+        }
+
+        .role {
+          font-size: 8px;
+        }
+      }
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+    }
+  }
+
+  .card:first-child {
+    margin-top: 100px;
+    position: relative;
+
+    &::before {
+      content: url("../images/bg-quotes.png");
+      transform: scale(0.5);
+      position: absolute;
+      z-index: -1;
+      top: -30px;
+      left: -5px;
+    }
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Sign-up
+.sign-up {
+  position: relative;
+  bottom: -125px;
+  background-color: $dark-blue;
+  width: 90vw;
+  margin: auto;
+  margin-bottom: -50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px hsl(216, 53%, 7%);
+
+  h3 {
+    margin-top: 10px;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0 10px 0;
+    position: relative;
+
+    input {
+      height: 45px;
+      border-radius: 200px;
+      outline: none;
+      border: none;
+      margin-bottom: 25px;
+      padding-left: 25px;
+
+      &::placeholder {
+        font-size: 10px;
+        opacity: 0.4;
+      }
+    }
+  }
+
+  button {
+    padding: 12px 20px;
+    outline: none;
+    border: none;
+    color: $white;
+  }
+}
+
+// Footer
+footer {
+  text-align: left;
+  padding: 250px 30px 40px 30px;
+  background-color: $darkest-blue;
+
+  p,
+  span {
+    padding-left: 20px;
+  }
+
+  .logo {
+    margin-bottom: 40px;
+
+    img {
+      width: 170px;
+    }
+  }
+
+  .location,
+  .phone,
+  .email {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+
+    img {
+      margin-top: 5px;
+    }
+  }
+
+  .location {
+    img {
+      height: 20px;
+      width: auto;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+  .phone img,
+  .email img {
+    height: 15px;
+    width: auto;
+  }
+
+  .links {
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin-top: 80px;
+
+      li {
+        font-size: 16px;
+        margin-bottom: 12px;
+
+        &:hover {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 27px;
+      height: 27px;
+      margin: 5px;
+      border: 1px solid $white;
+      border-radius: 50%;
+
+      .fa-facebook-f {
+        font-size: 12px;
+      }
+      .fa-twitter {
+        font-size: 11px;
+      }
+      .fa-instagram {
+        font-size: 13px;
+      }
+
+      &:hover {
+        color: $cyan-grad;
+        border: 1px solid $cyan-grad;
+      }
+    }
+  }
+}
+
+// Attribution
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 20px;
+  color: hsl(0, 0, 60%);
+
+  a {
+    color: hsl(228, 45%, 54%);
+  }
+}
+
+// Tablet
+@media screen and (min-width: 650px) and (max-width: 1199px) {
+  @import "tablet";
+}
+
+// Desktop
+@media screen and (min-width: 1200px) {
+  @import "desktop";
+}
+
+// Small phones
+@media screen and (max-width: 300px) {
+  header nav li {
+    padding-left: 10px;
+  }
+
+  section.testimonials .card {
+    width: 220px;
+  }
+
+  .alert {
+    bottom: 45px;
+    left: 10px;
+    font-size: 11px;
+  }
+}

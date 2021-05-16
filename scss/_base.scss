@@ -1,0 +1,58 @@
+@import "colors";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: $darker-blue;
+  color: $white;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+
+  &:visited {
+    color: $white;
+  }
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 70px;
+  background-image: linear-gradient(to right, $cyan-grad, $blue-grad);
+  border-radius: 100px;
+
+  &:hover {
+    background-image: linear-gradient(
+      to right,
+      lighten($color: $cyan-grad, $amount: 10),
+      lighten($color: $blue-grad, $amount: 10)
+    );
+    cursor: pointer;
+  }
+}
+
+.alert {
+  color: $light-red;
+  position: absolute;
+  bottom: 43px;
+  left: 25px;
+  font-size: 12px;
+}

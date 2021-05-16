@@ -1,0 +1,133 @@
+// Header
+header {
+  background: url("../images/bg-curvy-desktop.svg") no-repeat bottom center /
+    120%;
+  background-color: $dark-blue;
+
+  nav {
+    margin: 30px;
+
+    img {
+      width: 135px;
+    }
+
+    li {
+      font-size: 15px;
+      padding-left: 35px;
+    }
+  }
+
+  img {
+    max-width: 75vw;
+  }
+
+  h1 {
+    font-size: 30px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+  }
+
+  p {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+
+// Features
+.features {
+  h4 {
+    font-size: 20px;
+  }
+
+  p {
+    max-width: 350px;
+  }
+}
+
+// Demo
+.demo {
+  text-align: center;
+  max-width: 80vw;
+  margin: 100px auto 0 auto;
+
+  h2 {
+    font-size: 30px;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 40px;
+  }
+
+  p {
+    font-size: 15px;
+    max-width: 450px;
+    margin: 25px auto;
+  }
+
+  a {
+    font-size: 16px;
+    padding-top: 40px;
+  }
+}
+
+// Sign-up
+.sign-up {
+  max-width: 450px;
+
+  h3 {
+    font-size: 28px;
+  }
+
+  form {
+    input {
+      &::placeholder {
+        position: relative;
+        left: 0;
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  .logo,
+  .footer-main {
+    max-width: 60vw;
+    margin: auto;
+  }
+
+  .logo {
+    margin-bottom: 40px;
+  }
+
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .location {
+      width: 55%;
+    }
+
+    .contact {
+      width: 35%;
+    }
+
+    .links {
+      width: 100%;
+      padding-left: 30px;
+
+      ul {
+        flex-wrap: wrap;
+        margin-top: 50px;
+        height: 100px;
+      }
+    }
+
+    .social {
+      width: 100%;
+    }
+  }
+}
