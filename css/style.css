@@ -1,0 +1,642 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #181f2a;
+  color: #fff;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:visited {
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 70px;
+  background-image: linear-gradient(to right, #65e2d9, #339ecc);
+  border-radius: 100px;
+}
+.btn:hover {
+  background-image: linear-gradient(to right, #90eae4, #5cb1d6);
+  cursor: pointer;
+}
+
+.alert {
+  color: #ff4242;
+  position: absolute;
+  bottom: 43px;
+  left: 25px;
+  font-size: 12px;
+}
+
+section {
+  padding: 30px;
+}
+
+header {
+  padding: 20px 30px 150px 30px;
+  background: url("../images/bg-curvy-mobile.svg") no-repeat bottom center/100%;
+  background-color: #1c2431;
+}
+header nav {
+  margin: 0 -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav img {
+  width: 75px;
+}
+header nav li {
+  padding-left: 25px;
+  font-size: 12px;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+header .intro {
+  margin-top: 50px;
+}
+header h1 {
+  font-size: 24px;
+  margin-top: 25px;
+}
+header p {
+  padding: 10px;
+  padding-bottom: 40px;
+}
+
+.features .security,
+.features .collaboration,
+.features .store {
+  margin-top: 100px;
+}
+.features img {
+  width: 65px;
+}
+.features .security img {
+  width: 55px;
+}
+.features h4 {
+  font-size: 17px;
+  margin-top: 30px;
+}
+.features p {
+  margin: 10px auto 0 auto;
+  max-width: 70vw;
+}
+
+.demo {
+  margin-top: 100px;
+  text-align: left;
+}
+.demo h2 {
+  font-size: 18px;
+  margin-top: 40px;
+}
+.demo p {
+  margin: 20px 0;
+}
+.demo a {
+  color: #65e2d9;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #65e2d9;
+  font-size: 12px;
+}
+.demo a i {
+  font-size: 11px;
+  padding-left: 3px;
+}
+.demo a:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.testimonials .card {
+  background-color: #202a3c;
+  padding: 30px 20px 20px 20px;
+  text-align: left;
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 0 auto 25px auto;
+  width: max(285px, 50vw);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #151c28;
+}
+.testimonials .card .person {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.testimonials .card .person .data {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.testimonials .card .person .data .name {
+  font-size: 10px;
+  font-weight: 700;
+}
+.testimonials .card .person .data .role {
+  font-size: 8px;
+}
+.testimonials .card img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.testimonials .card:first-child {
+  margin-top: 100px;
+  position: relative;
+}
+.testimonials .card:first-child::before {
+  content: url("../images/bg-quotes.png");
+  transform: scale(0.5);
+  position: absolute;
+  z-index: -1;
+  top: -30px;
+  left: -5px;
+}
+.testimonials .card:last-child {
+  margin-bottom: 0;
+}
+
+.sign-up {
+  position: relative;
+  bottom: -125px;
+  background-color: #1c2431;
+  width: 90vw;
+  margin: auto;
+  margin-bottom: -50px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #08101b;
+}
+.sign-up h3 {
+  margin-top: 10px;
+}
+.sign-up p {
+  margin-top: 20px;
+}
+.sign-up form {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 0 10px 0;
+  position: relative;
+}
+.sign-up form input {
+  height: 45px;
+  border-radius: 200px;
+  outline: none;
+  border: none;
+  margin-bottom: 25px;
+  padding-left: 25px;
+}
+.sign-up form input::-moz-placeholder {
+  font-size: 10px;
+  opacity: 0.4;
+}
+.sign-up form input:-ms-input-placeholder {
+  font-size: 10px;
+  opacity: 0.4;
+}
+.sign-up form input::placeholder {
+  font-size: 10px;
+  opacity: 0.4;
+}
+.sign-up button {
+  padding: 12px 20px;
+  outline: none;
+  border: none;
+  color: #fff;
+}
+
+footer {
+  text-align: left;
+  padding: 250px 30px 40px 30px;
+  background-color: #0b1523;
+}
+footer p,
+footer span {
+  padding-left: 20px;
+}
+footer .logo {
+  margin-bottom: 40px;
+}
+footer .logo img {
+  width: 170px;
+}
+footer .location,
+footer .phone,
+footer .email {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+footer .location img,
+footer .phone img,
+footer .email img {
+  margin-top: 5px;
+}
+footer .location img {
+  height: 20px;
+  width: auto;
+}
+footer .location p {
+  font-size: 16px;
+}
+footer .phone img,
+footer .email img {
+  height: 15px;
+  width: auto;
+}
+footer .links ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+footer .links ul li {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+footer .links ul li:hover {
+  font-weight: 700;
+}
+footer .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+footer .social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  margin: 5px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+footer .social a .fa-facebook-f {
+  font-size: 12px;
+}
+footer .social a .fa-twitter {
+  font-size: 11px;
+}
+footer .social a .fa-instagram {
+  font-size: 13px;
+}
+footer .social a:hover {
+  color: #65e2d9;
+  border: 1px solid #65e2d9;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 20px;
+  color: #999999;
+}
+.attribution a {
+  color: #556abe;
+}
+
+@media screen and (min-width: 650px) and (max-width: 1199px) {
+  header {
+    background: url("../images/bg-curvy-desktop.svg") no-repeat bottom center/120%;
+    background-color: #1c2431;
+  }
+  header nav {
+    margin: 30px;
+  }
+  header nav img {
+    width: 135px;
+  }
+  header nav li {
+    font-size: 15px;
+    padding-left: 35px;
+  }
+  header img {
+    max-width: 75vw;
+  }
+  header h1 {
+    font-size: 30px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  header p {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .features h4 {
+    font-size: 20px;
+  }
+  .features p {
+    max-width: 350px;
+  }
+
+  .demo {
+    text-align: center;
+    max-width: 80vw;
+    margin: 100px auto 0 auto;
+  }
+  .demo h2 {
+    font-size: 30px;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .demo p {
+    font-size: 15px;
+    max-width: 450px;
+    margin: 25px auto;
+  }
+  .demo a {
+    font-size: 16px;
+    padding-top: 40px;
+  }
+
+  .sign-up {
+    max-width: 450px;
+  }
+  .sign-up h3 {
+    font-size: 28px;
+  }
+  .sign-up form input::-moz-placeholder {
+    position: relative;
+    left: 0;
+  }
+  .sign-up form input:-ms-input-placeholder {
+    position: relative;
+    left: 0;
+  }
+  .sign-up form input::placeholder {
+    position: relative;
+    left: 0;
+  }
+
+  footer .logo,
+footer .footer-main {
+    max-width: 60vw;
+    margin: auto;
+  }
+  footer .logo {
+    margin-bottom: 40px;
+  }
+  footer .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer .footer-main .location {
+    width: 55%;
+  }
+  footer .footer-main .contact {
+    width: 35%;
+  }
+  footer .footer-main .links {
+    width: 100%;
+    padding-left: 30px;
+  }
+  footer .footer-main .links ul {
+    flex-wrap: wrap;
+    margin-top: 50px;
+    height: 100px;
+  }
+  footer .footer-main .social {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 100px;
+  }
+
+  header {
+    background: url("../images/bg-curvy-desktop.svg") no-repeat bottom center/100%;
+    background-color: #1c2431;
+  }
+  header nav {
+    margin: 50px;
+  }
+  header nav img {
+    width: 170px;
+  }
+  header nav li {
+    font-size: 16px;
+    padding-left: 50px;
+  }
+  header img {
+    width: auto;
+  }
+  header h1 {
+    font-size: 40px;
+    max-width: 720px;
+    margin: auto;
+    margin-top: 40px;
+  }
+  header p {
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75vw;
+    margin: auto;
+  }
+  .features .access,
+.features .security,
+.features .collaboration,
+.features .store {
+    width: 50%;
+    margin: 0 0 50px 0;
+    padding: 0 50px;
+  }
+  .features img {
+    width: 80px;
+  }
+  .features .security img {
+    width: 70px;
+  }
+  .features .security {
+    position: relative;
+    top: -15px;
+    padding-bottom: 15px;
+  }
+  .features h4 {
+    font-size: 20px;
+  }
+  .features p {
+    max-width: 370px;
+  }
+
+  .demo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 0 100px;
+  }
+  .demo .first {
+    width: auto;
+    padding-right: 90px;
+  }
+  .demo .first img {
+    width: 600px;
+  }
+  .demo h2 {
+    font-size: 40px;
+    max-width: 400px;
+    margin-top: 0;
+  }
+  .demo p {
+    font-size: 15px;
+    max-width: 470px;
+  }
+  .demo a {
+    font-size: 16px;
+  }
+
+  .testimonials {
+    display: flex;
+    width: 85vw;
+    margin: auto;
+    margin-top: 150px;
+  }
+  .testimonials .card {
+    height: 210px;
+    width: 30%;
+    padding: 40px 25px 25px;
+  }
+  .testimonials .card p {
+    font-size: 14px;
+  }
+  .testimonials .card:first-child {
+    margin-top: 0;
+  }
+  .testimonials .card:first-child::before {
+    content: url("../images/bg-quotes.png");
+    transform: scale(1);
+    top: -35px;
+    left: -10px;
+  }
+
+  .sign-up {
+    width: 60vw;
+    max-width: 805px;
+    bottom: -100px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  .sign-up h3 {
+    font-size: 30px;
+  }
+  .sign-up p {
+    padding: 0 70px;
+  }
+  .sign-up form {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  .sign-up form input {
+    margin-bottom: 0;
+    width: 65%;
+  }
+  .sign-up form input::-moz-placeholder {
+    font-size: 12px;
+    padding-left: 0;
+    opacity: 0.4;
+  }
+  .sign-up form input:-ms-input-placeholder {
+    font-size: 12px;
+    padding-left: 0;
+    opacity: 0.4;
+  }
+  .sign-up form input::placeholder {
+    font-size: 12px;
+    padding-left: 0;
+    opacity: 0.4;
+  }
+  .sign-up form .btn {
+    font-size: 14px;
+    padding: 12px 30px;
+  }
+
+  footer {
+    padding: 200px 100px 70px 100px;
+  }
+  footer .footer-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  footer .footer-main .location {
+    max-width: 370px;
+  }
+  footer .footer-main ul,
+footer .footer-main .social {
+    margin-top: 0;
+  }
+  footer .footer-main ul {
+    width: 400px;
+    height: 150px;
+    flex-wrap: wrap;
+    padding-left: 100px;
+  }
+  footer .footer-main .social {
+    transform: scale(1.2);
+  }
+
+  .alert {
+    color: #ff4242;
+    position: absolute;
+    bottom: -25px;
+    left: 75px;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 300px) {
+  header nav li {
+    padding-left: 10px;
+  }
+
+  section.testimonials .card {
+    width: 220px;
+  }
+
+  .alert {
+    bottom: 45px;
+    left: 10px;
+    font-size: 11px;
+  }
+}/*# sourceMappingURL=style.css.map */
